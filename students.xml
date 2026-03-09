@@ -2,11 +2,11 @@
 
 <Students>
     <student1>
-        <FirstName>Honey</FirstName>
+        <FirstName>Honey</FirstName> -->these are fields
         <DOB>1999-01-01</DOB>
-        <Email>info@joindevops.com</Email>
-        <Addresses>
-            <PermAddress>
+        <Email>info@joindevops.com</Email> 
+        <Addresses> --->these are objects
+            <PermAddress> 
                 <FlatNumber>104</FlatNumber>
                 <Street>Gandhi Nagar</Street>
                 <City>Hyderabad</City>
