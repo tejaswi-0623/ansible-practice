@@ -1,0 +1,39 @@
+<!--this is how we write code in xml...the code format-->
+
+<Students>
+    <student1>
+        <FirstName>Honey</FirstName>
+        <DOB>1999-01-01</DOB>
+        <Email>info@joindevops.com</Email>
+        <Addresses>
+            <PermAddress>
+                <FlatNumber>104</FlatNumber>
+                <Street>Gandhi Nagar</Street>
+                <City>Hyderabad</City>
+            </PermAddress>
+            <CurrentAddress>
+                <FlatNumber>104</FlatNumber>
+                <Street>Gandhi Nagar</Street>
+                <City>Hyderabad</City>
+            </CurrentAddress>
+        </Addresses>
+    </student1>
+
+    <student2>
+        <FirstName>Mani</FirstName>
+        <DOB>1998-06-09</DOB>
+        <Email>info@joindevops.com</Email>
+        <Addresses>
+            <PermAddress>
+                <FlatNumber>104</FlatNumber>
+                <Street>Gandhi Nagar</Street>
+                <City>Hyderabad</City>
+            </PermAddress>
+            <CurrentAddress>
+                <FlatNumber>104</FlatNumber>
+                <Street>Gandhi Nagar</Street>
+                <City>Hyderabad</City>
+            </CurrentAddress>
+        </Addresses>
+    </student2>
+</Students>
