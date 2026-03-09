@@ -1,0 +1,47 @@
+- name: "honey"
+  dob: "1999-09-05"
+  mobilenumber: 980789000
+  addresses:
+  - flatnumber: 104
+    street: "gandhinagar"
+    city: "hyderabad"
+    type: "current"
+
+  - flatNumber: 104
+    street: "gandhi nagar"
+    city: hyderabad
+    type: perm
+
+- name: "mani"
+  dob: "1999-09-05"
+  mobilenumber: 980789000
+  addresses:
+  - flatnumber: 104
+    street: "gandhinagar"
+    city: "hyderabad"
+    type: "current"
+
+  - flatNumber: 104
+    street: "gandhi nagar"
+    city: hyderabad
+    type: perm
+
+-  name: "mani"
+   dob: "1999-09-05"
+   mobilenumber: 980789000
+   addresses:
+   - flatnumber: 104
+     street: "gandhinagar"
+     city: "hyderabad"
+     type: "current"
+
+   - flatNumber: 104
+     street: "gandhi nagar"
+     city: hyderabad
+     type: perm
+
+
+
+  
+
+ 
