@@ -1,0 +1,16 @@
+#install nginx package
+- name: install nginx
+  hosts: web #connecting to another server using inventory file, in inventory file we give server private ip under web group 
+  become: yes #to give root access
+  tasks: 
+  - name: to install nginx
+    ansible.builtin.package: # module to install package
+    name: nginx
+    state: present # to install nginx
+  - name: to start nginx  
+    ansible.builtin.service: #module to start nginx
+    name: nginx
+    state: started #start nginx
+    enabled: yes  #enable nginx
+
+    
