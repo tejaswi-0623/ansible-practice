@@ -13,4 +13,4 @@
       state: started #start nginx
       enabled: yes  #enable nginx
 
-    
+#to check output in prompt: ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 installpackage.yaml
