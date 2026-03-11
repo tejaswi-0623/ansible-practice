@@ -5,3 +5,5 @@
   - name: print the message
     ansible.builtin.debug: #to print in ansible 
      msg: "hi,hello from ansible"
+
+#to check output in prompt: ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321 print.yaml
