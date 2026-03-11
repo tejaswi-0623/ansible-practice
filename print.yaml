@@ -1,6 +1,7 @@
+# to print from ansible 
 - name: to print in ansible
   hosts: web
   tasks:
   - name: print the message
-    ansible.builtin.debug:
+    ansible.builtin.debug: #to print in ansible 
      msg: "hi,hello from ansible"

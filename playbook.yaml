@@ -1,5 +1,6 @@
+#connecting to server 
 - name: ping the server
-  hosts: web
+  hosts: web #connecting from another server and giving private ip in iventory file under web group
   tasks:
    - name: ping the server
      ansible.builtin.ping:
