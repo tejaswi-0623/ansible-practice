@@ -1,0 +1,14 @@
+#calling vairables from 07.vairanles.yaml file
+
+- name: vairables
+  hosts: local
+  connection: local
+  vars_files: 
+  - 07.vairables.yaml
+  tasks: 
+  - name: print vairables
+    vars:
+    - topic: "ansible"
+    ansible.builtin.debug:
+      msg: "course is: {{ COURSE }}, duration of course is: {{ DURATION }}, days is: {{ DAYS }}, timings of course is: {{ Timings }},
+            topics covered till now is: {{ past_topics }} and topic now is {{ topic }}

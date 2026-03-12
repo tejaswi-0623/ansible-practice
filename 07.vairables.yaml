@@ -1,0 +1,7 @@
+#vairables declaring in this playbook 
+
+COURSE: "DevOps with AWS"
+DURATION: "4 months"
+DAYS: "5 days"
+Timings: "8 pm -10 pm "
+past_topics: "linux, shell"
