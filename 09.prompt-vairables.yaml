@@ -1,0 +1,20 @@
+#giving input from command prompt 
+
+- name: prompt
+  hosts: local
+  connection: local
+  vars_prompt: #to give input from user through command prompt
+  - name: username
+    prompt: "please enter the username"
+    private: false #visible the entered input in screen
+
+  - name: password
+    prompt: "please enter the password"
+    private: true #not visible the entered input in screen
+
+  tasks:
+  - name: print the username and password
+    ansible.builtin.debug:
+     msg:"username is {{ username }}, password is {{ password }}"
+   
+   

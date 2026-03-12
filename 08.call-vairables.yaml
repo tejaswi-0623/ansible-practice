@@ -3,8 +3,8 @@
 - name: vairables
   hosts: local
   connection: local
-  vars_files: 
-  - 07.vairables.yaml
+  vars_files: #to call from another vairable file
+  - 07.vairables.yaml #vairable file
   tasks: 
   - name: print vairables
     vars:
