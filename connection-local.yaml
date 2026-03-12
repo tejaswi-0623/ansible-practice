@@ -1,0 +1,9 @@
+#playbook to print hello using connection:local without ssh keys
+
+- name: local execution
+  hosts: local
+  connection: local
+  tasks:
+  - name: to run the playbook using local connection and local hosts
+    ansible.builtin.debug:
+      msg: "running locally without using ssh"
