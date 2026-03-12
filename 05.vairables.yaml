@@ -13,4 +13,6 @@
       msg: "learning course is: {{ COURSE }}, duration of course is: {{ DURATION }}, days of week spent is: {{ DAYS }}"
 
 #in prompt ansible-playbook -i inventory.ini 05.vairables.yaml
-#
+#ok: [localhost] => {
+#    "msg": "learning course is: DevOps with AWS, duration of course is: 4 months, days of week spent is: 5 days"
+#}
