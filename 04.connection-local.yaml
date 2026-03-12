@@ -2,7 +2,7 @@
 
 - name: local execution
   hosts: local #run the playbook locally and given in inventory file as [local]:localhost
-  connection: local  #run without using ssh
+  connection: local  #run without using ssh means no need to give username and password at termianl promt to run
   tasks:
   - name: to run the playbook using local connection and local hosts
     ansible.builtin.debug:
