@@ -9,6 +9,7 @@
    DAYS: "5 days"
   tasks:
    - name: print vairables at task level
-     COURSE: "ansible"
+     vars:
+      COURSE: "ansible"
      ansible.builtin.debug:
       msg: "course is: {{ COURSE }}, duration of course is: {{ DURATION }}, days covered in week is: {{ DAYS }}"
