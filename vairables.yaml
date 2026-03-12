@@ -1,0 +1,13 @@
+#playbook to learn vairables
+
+- name: play level vairables
+  hosts: local
+  connection: local
+  vars:
+   COURSE: "DevOps with AWS"
+   DURATION: "4 months"
+   DAYS: "5 days"
+  tasks:
+   - name : print vairables
+     ansible.builtin.debug:
+      msg: "learning course is: {{ COURSE }}, duration of course is: {{ DURATION }}, days of week spent is: {{ DAYS }}"
