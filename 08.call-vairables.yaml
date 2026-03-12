@@ -11,4 +11,4 @@
     - topic: "ansible"
     ansible.builtin.debug:
       msg: "course is: {{ COURSE }}, duration of course is: {{ DURATION }}, days is: {{ DAYS }}, timings of course is: {{ Timings }},
-            topics covered till now is: {{ past_topics }} and topic now is {{ topic }}
+        topics covered till now is: {{ past_topics }} and topic now is {{ topic }}"
