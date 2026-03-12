@@ -12,3 +12,6 @@
     ansible.builtin.debug:
       msg: "course is: {{ COURSE }}, duration of course is: {{ DURATION }}, days is: {{ DAYS }}, timings of course is: {{ Timings }},
         topics covered till now is: {{ past_topics }} and topic now is {{ topic }}"
+
+# in prompt: ansible-playbook -i inventory.ini 08.call-vairables.yaml
+#"msg": "course is: DevOps with AWS, duration of course is: 4 months, days is: 5 days, timings of course is: 8 pm -10 pm , topics covered till now is: linux, shell and topic now is ansible"
