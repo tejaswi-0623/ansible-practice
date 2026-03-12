@@ -13,3 +13,8 @@
       COURSE: "ansible"
      ansible.builtin.debug:
       msg: "course is: {{ COURSE }}, duration of course is: {{ DURATION }}, days covered in week is: {{ DAYS }}"
+
+
+#in prompt: ansible-playbook -i inventory.ini task-vairables.yaml
+#"msg": "course is: ansible, duration of course is: 4 months, days covered in week is: 5 days"
+#here at task level course vairable overrides the play level 
