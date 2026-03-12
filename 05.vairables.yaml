@@ -11,3 +11,6 @@
    - name : print vairables
      ansible.builtin.debug:
       msg: "learning course is: {{ COURSE }}, duration of course is: {{ DURATION }}, days of week spent is: {{ DAYS }}"
+
+#in prompt ansible-playbook -i inventory.ini 05.vairables.yaml
+#
