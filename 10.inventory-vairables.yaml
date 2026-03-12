@@ -1,0 +1,9 @@
+#giving vairables at inventory file
+
+- name: vairables from inventory file
+  hosts: local
+  connection: local
+  tasks:
+  - name: print vairable from inventory
+    ansible.builtin.debug:
+     msg: "course is: {{ COURSE }}" #declared vairable in inventory file

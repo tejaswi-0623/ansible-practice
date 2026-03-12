@@ -20,6 +20,6 @@
 # in prompt: ansible-playbook -i inventory.ini 09.prompt-vairables.yaml
 #please enter the username: honey
 #please enter the password:
-#"msg": "username is honey, password is kunamneni"
+#"msg": "username is honey, password is kunamneni" here we printed the password that is why it is showing
 
   
