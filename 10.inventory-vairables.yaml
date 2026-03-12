@@ -7,3 +7,6 @@
   - name: print vairable from inventory
     ansible.builtin.debug:
      msg: "course is: {{ COURSE }}" #declared vairable in inventory file
+
+#in prompt: ansible-playbook -i inventory.ini inventory-vairables.yaml
+#"msg": "course is: ansible from inventory file"
