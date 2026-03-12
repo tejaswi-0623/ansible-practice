@@ -1,9 +1,9 @@
-#giving input from command prompt 
+#giving input from command prompt vairables
 
 - name: prompt
   hosts: local
   connection: local
-  vars_prompt: #to give input from user through command prompt
+  vars_prompt: #to give input through command prompt
   - name: username
     prompt: "please enter the username"
     private: false #visible the entered input in screen
