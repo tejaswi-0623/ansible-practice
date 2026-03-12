@@ -7,3 +7,6 @@
   - name: print arguments
     ansible.builtin.debug:
      msg: "hi {{ Name }}, Good morning from ansible"
+
+#in prompt: ansible-playbook -i inventory.ini -e Name=honey 11.arguments.yaml
+#"msg": "hi honey, Good morning from ansible"
