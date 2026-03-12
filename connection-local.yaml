@@ -1,9 +1,13 @@
 #playbook to print hello using connection:local without ssh keys
 
 - name: local execution
-  hosts: local
-  connection: local
+  hosts: local #run the playbook locally and given in inventory file as [local]:localhost
+  connection: local  #run without using ssh
   tasks:
   - name: to run the playbook using local connection and local hosts
     ansible.builtin.debug:
       msg: "running locally without using ssh"
+
+#in prompt: ansible-playbook -i inventory.ini connection-local.yaml
+#if we directly mention as hosts:localhost in playbook itself without giving in invenotry file then in prompt
+#ansible-playbook connection-local.yaml
