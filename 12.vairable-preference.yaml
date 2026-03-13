@@ -20,7 +20,7 @@
     #vars:
     username: "Ansible vairable from arguments"
     ansible.builtin.debug:
-     msg: "Hi {{ username }}"
+      msg: "Hi {{ username }}"
 
   
   
