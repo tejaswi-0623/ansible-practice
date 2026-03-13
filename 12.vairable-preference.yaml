@@ -17,8 +17,8 @@
   
   tasks: #vairable giving at task level
   - name : print vairable 
-    vars:
-    username: "Ansible vairable from task level"
+    #vars:
+    username: "Ansible vairable from arguments"
     ansible.builtin.debug:
      msg: "Hi {{ username }}"
 
