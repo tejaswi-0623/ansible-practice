@@ -8,27 +8,36 @@
    duration: "4 months"  #string"
    days: 5             #integer
    is_live: true       #boolean
-   topics: #list [ ]
-   - linux
+   topics: #list [ ] list means we give as -
+   - linux 
    - shell
    - ansible
    - terraform
    - jenkins
    - kubernetes
    - git
-   structure: #map/dictionary { }
+   structure: #map/dictionary { } map means we give as key:value
     linux: "4 weeks"
     shell: "3 weeks"
     ansibel: "just started"
-    remains topucs: "yet to start"
+    remaining topics: "yet to start"
   tasks:
   - name: datatypes in ansible
     ansible.builtin.debug:
      msg: | #giving pipe symbol for printing multiple lines
-      program is: {{ course }} \n
-      duration of course is: {{ duration }} \n
-      days in a weeks is: {{ days }} \n
-      live covered is: {{ is_live }} \n
-      topics of course are: {{ topics }} \n
+      program is: {{ course }} 
+      duration of course is: {{ duration }} 
+      days in a weeks is: {{ days }} 
+      live covered is: {{ is_live }} 
+      topics of course are: {{ topics }} 
       schedule of topics are: {{ structure }} 
+
+#in prompt: ansible-playbook -i inventory.ini 13.datatypes.yaml
+# "msg": "program is: DevOps with AWS
+#duration of course is: 4 months
+#days in a weeks is: 5
+#live covered is: True
+#topics of course are: ['linux', 'shell', 'ansible', 'terraform', 'jenkins', 'kubernetes', 'git']
+#schedule of topics are: {'linux': '4 weeks', 'shell': '3 weeks', 'ansibel': 'just started', 'remaining topics': 'yet to start'}
+
 
