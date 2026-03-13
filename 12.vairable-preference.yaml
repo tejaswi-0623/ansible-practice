@@ -4,7 +4,7 @@
   hosts: local
   connection: local
   vars: #vairable giving at play level 
-  username: "play level user ansible"
+   username: "play level user ansible"
 
   vars_files: #vairable giving from another file 
     - 07.vairables.yaml
