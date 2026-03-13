@@ -7,7 +7,7 @@
    course: "DevOps with AWS" #string"
    duration: "4 months"  #string"
    days: 5             #integer
-   is_live: "true"       #boolean
+   is_live: true       #boolean
    topics: #list [ ]
    - linux
    - shell
@@ -24,7 +24,7 @@
   tasks:
   - name: datatypes in ansible
     ansible.builtin.debug:
-     msg:
+     msg: | #giving pipe symbol for printing multiple lines
       program is: {{ course }}
       duration of course is: {{ duration }}
       days in a weeks is: {{ days }}
