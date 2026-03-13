@@ -32,6 +32,8 @@
       topics of course are: {{ topics }} 
       schedule of topics are: {{ structure }} 
 
+      
+
 #in prompt: ansible-playbook -i inventory.ini 13.datatypes.yaml
 # "msg": "program is: DevOps with AWS
 #duration of course is: 4 months
