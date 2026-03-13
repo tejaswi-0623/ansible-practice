@@ -6,8 +6,8 @@
   vars: #vairable giving at play level 
    username: "play level user ansible"
 
-  vars_files: #vairable giving from another file 
-    - 07.vairables.yaml
+  #vars_files: #vairable giving from another file 
+  # - 07.vairables.yaml
   
 
   vars_prompt: #vairable giving from prompt
@@ -33,6 +33,7 @@
   
 #first priority is from arguments
 #second priority is from task level
+#third priority is from file
 
 
 
