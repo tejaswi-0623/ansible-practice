@@ -27,7 +27,7 @@
     vars:
      username: "ansible vairable from task level"
     ansible.builtin.debug:
-     msg: "username"
+     msg: "{{ username }}"
 
 
   
