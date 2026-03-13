@@ -3,8 +3,8 @@
 - name: vairable preference at play level
   hosts: local
   connection: local
-  vars: #vairable giving at play level 
-   username: "play level user ansible"
+  # vars: #vairable giving at play level 
+  #  username: "play level user ansible"
 
   #vars_files: #vairable giving from another file 
   # - 07.vairables.yaml
@@ -35,6 +35,7 @@
 #second priority is from task level
 #third priority is from file
 #fourth priority is from prompt
+#fifth priority is from play level
 
 
 
