@@ -1,0 +1,34 @@
+#to learn datatypes in ansible
+
+- name: datatypes in ansible
+  hosts: local
+  connection: local
+  vars:
+   course: "DevOps with AWS" #string"
+   duration: "4 months"  #string"
+   days: 5             #integer
+   is_live: "true"       #boolean
+   topics: #list [ ]
+   - linux
+   - shell
+   - ansible
+   - terraform
+   - jenkins
+   - kubernetes
+   - git
+   structure: #map/dictionary { }
+    linux: "4 weeks"
+    shell: "3 weeks"
+    ansibel: "just started"
+    remains topucs: "yet to start"
+  tasks:
+  - name: datatypes in ansible
+    ansible.builtin.debug:
+     msg:
+      program is: {{ course }}
+      duration of course is: {{ duration }}
+      days in a weeks is: {{ days }}
+      live covered is: {{ is_live }}
+      topics of course are: {{ topics }}
+      schedule of topics are: {{ structure }}
+
