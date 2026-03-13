@@ -22,15 +22,21 @@
   #   ansible.builtin.debug:
   #     msg: "ansible vairable at {{ username }}"
   
-  tasks: #vairable giving at task level
-  - name: print vairable at task level
-    vars:
-     username: "ansible vairable from task level"
-    ansible.builtin.debug:
-     msg: "{{ username }}"
+  # tasks: #vairable giving at task level
+  # - name: print vairable at task level
+  #   vars:
+  #    username: "ansible vairable from task level"
+  #   ansible.builtin.debug:
+  #    msg: "{{ username }}"
 
 
   
+#first priority is from arguments
+#second priority is from task level
+
+
+
+
   
   
   
