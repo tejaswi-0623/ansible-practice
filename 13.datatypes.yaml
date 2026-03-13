@@ -25,10 +25,10 @@
   - name: datatypes in ansible
     ansible.builtin.debug:
      msg: | #giving pipe symbol for printing multiple lines
-      program is: {{ course }}
-      duration of course is: {{ duration }}
-      days in a weeks is: {{ days }}
-      live covered is: {{ is_live }}
-      topics of course are: {{ topics }}
-      schedule of topics are: {{ structure }}
+      program is: {{ course }} \n
+      duration of course is: {{ duration }} \n
+      days in a weeks is: {{ days }} \n
+      live covered is: {{ is_live }} \n
+      topics of course are: {{ topics }} \n
+      schedule of topics are: {{ structure }} 
 
