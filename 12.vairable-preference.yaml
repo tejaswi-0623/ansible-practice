@@ -20,10 +20,10 @@
      ansible.builtin.debug: 
       msg: "vairable precedence is {{ username }}"
   
-  vars:
-  - name: vairable from arguments
-    ansible.builtin.debug:
-     msg: "hi {{ Name }}, ansible vairable from arguments"
+  # vars:
+  # - name: vairable from arguments
+  #   ansible.builtin.debug:
+  #    msg: "hi {{ Name }}, ansible vairable from arguments"
 
   
   
