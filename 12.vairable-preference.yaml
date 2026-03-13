@@ -15,12 +15,20 @@
     prompt: "please enter vairable from prompt"
     private: false
   
-  tasks: #vairable giving at task level
-  - name : print vairable 
-    vars:
+  tasks: #vairable giving at arguments 
+  - name : print vairable at runtime
+    vars: 
      username: "Ansible vairable from arguments"
     ansible.builtin.debug:
-      msg: "Hi {{ username }}"
+      msg: "ansible vairable at {{ username }}"
+  
+  tasks: #vairable giving at task level
+  - name: print vairable at task level
+    vars:
+     username: "ansible vairable from task level"
+    ansible.builtin.debug:
+     msg: "username"
+
 
   
   
