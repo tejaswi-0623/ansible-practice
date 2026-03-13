@@ -3,29 +3,29 @@
 - name: vairable preference at play level
   hosts: local
   connection: local
-  # vars: #vairable giving at play level 
-  #  username: "play level user ansible"
+  vars: #vairable giving at play level 
+   username: "play level user ansible"
 
-  #vars_files: #vairable giving from another file 
-  # - 07.vairables.yaml
+  vars_files: #vairable giving from another file 
+   - 07.vairables.yaml
   
 
-  # vars_prompt: #vairable giving from prompt
-  # - name: username
-  #   prompt: "please enter vairable from prompt"
-  #   private: false
+  vars_prompt: #vairable giving from prompt
+   - name: username
+     prompt: "please enter vairable from prompt"
+     private: false
   
-  # tasks: #vairable giving at arguments 
-  # - name : print vairable at runtime
-  #   vars: 
-  #    username: "Ansible vairable from arguments"
-  #   ansible.builtin.debug:
-  #     msg: "ansible vairable at {{ username }}"
+  tasks: #vairable giving at arguments 
+  - name : print vairable at runtime
+    vars: 
+      username: "Ansible vairable from arguments"
+    ansible.builtin.debug:
+       msg: "ansible vairable at {{ username }}"
   
   tasks: #vairable giving at task level
   - name: print vairable at task level
-  #   vars:
-  #    username: "ansible vairable from task level"
+    vars:
+      username: "ansible vairable from task level"
     ansible.builtin.debug:
       msg: "{{ username }}"
 
@@ -36,6 +36,17 @@
 #third priority is from file
 #fourth priority is from prompt
 #fifth priority is from play level
+#sixth priority is from inventory file 
+
+#got below output
+
+#"msg": "ansible vairable from task level"
+#"msg": "ansibel vairable from file"
+#please enter vairable from prompt: ansible from prompt
+#"msg": "ansible from prompt" 
+# "msg": "play level user ansible"
+#"msg": "ansible vairable from inventory file"
+
 
 
 
