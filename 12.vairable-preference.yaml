@@ -16,15 +16,13 @@
     private: false
   
   tasks: #vairable giving at task level
-   - name: vairable from task level
-     ansible.builtin.debug: 
-      msg: "vairable precedence is {{ username }}"
-  
-  # vars:
-  # - name: vairable from arguments
-  #   ansible.builtin.debug:
-  #    msg: "hi {{ Name }}, ansible vairable from arguments"
+  vars:
+  username: "Ansible vairable from task level"
+  ansible.builtin.debug:
+   msg: "Hi {{ username }}"
 
+  
+  
   
   
     
