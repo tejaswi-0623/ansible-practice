@@ -39,7 +39,9 @@
 #sixth priority is from inventory file 
 
 #got below output
-
+# ansible-playbook -i inventory.ini -e 'username="ansible vairable from args"' 12.vairable-preference.yaml
+# "msg": "ansible vairable from args"
+# from here we can run as ansible-playbook -i inventory.ini 12.vairable-preference.yaml
 #"msg": "ansible vairable from task level"
 #"msg": "ansibel vairable from file"
 #please enter vairable from prompt: ansible from prompt
