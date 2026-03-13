@@ -22,12 +22,12 @@
   #   ansible.builtin.debug:
   #     msg: "ansible vairable at {{ username }}"
   
-  # tasks: #vairable giving at task level
-  # - name: print vairable at task level
+  tasks: #vairable giving at task level
+  - name: print vairable at task level
   #   vars:
   #    username: "ansible vairable from task level"
-  #   ansible.builtin.debug:
-  #    msg: "{{ username }}"
+    ansible.builtin.debug:
+      msg: "{{ username }}"
 
 
   
