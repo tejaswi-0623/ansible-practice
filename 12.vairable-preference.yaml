@@ -1,0 +1,35 @@
+#to understand vairable preference/precedence
+
+- name: vairable preference at play level
+  hosts: local
+  connection: local
+  vars: #vairable giving at play level 
+  username: "play level user ansible"
+
+  vars_files: #vairable giving from another file 
+    - 07.vairables.yaml
+  
+
+  vars_prompt: #vairable giving from prompt
+  - name: username
+    prompt: "please enter vairable from prompt"
+    private: false
+  
+  tasks: #vairable giving at task level
+   - name: vairable from task level
+     ansible.builtin.debug: 
+      msg: "vairable precedence is {{ username }}"
+  
+  vars:
+  - name: vairable from arguments
+    ansible.builtin.debug:
+     msg: "hi {{ Name }}, ansible vairable from arguments"
+
+  
+  
+    
+
+   
+   
+  
+ 
