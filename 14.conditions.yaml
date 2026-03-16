@@ -11,3 +11,8 @@
     ansible.builtin.debug:
       msg: "is the {{ course }} class is live everyday?"
     when: is_live
+
+#in prompt: ansible-playbook -i inventory.ini 14.conditions.yaml
+#is_live:true here the given condtion is true so we got ouptut as below
+#"msg": "is the DevOps class is live everyday?"
+#if we give is_live:false and run the playbook then we didn't get output of when condition because it is false
