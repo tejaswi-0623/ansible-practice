@@ -1,0 +1,13 @@
+#to learn conditions in ansible
+
+- name: conditions in ansible
+  hosts: local #run ansible locally 
+  connection: local #need to use SSH to connect to server
+  vars:
+  course: DevOps
+  is_live: true
+  tasks:
+  - name: check condition
+    ansible.builtin.debug:
+      msg: "is the {{ course }} class is live everyday"
+    when: is_live
