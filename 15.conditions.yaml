@@ -19,3 +19,8 @@
 
 
 #while giving when condition we don't use any type of braces that is fixed syntax
+#in prompt:ansible-playbook -i inventory.ini 15.conditions.yaml
+#ok: [localhost] => {
+    #"msg": "given number is greather than 5"
+#if i run the command prompt as  ansible-playbook -i inventory.ini -e '{"number":3}' 15.conditions.yaml
+#then i get otutput as  msg: "given number is less than 5" because here command prompt -e vars overrides the play level vars
