@@ -1,0 +1,9 @@
+#to check whats inside gathering facts statement in ansible
+
+- name: gathering facts
+  hosts: local
+  connection: local
+  tasks:
+  - name: print gathering facts
+    ansible.builtin.debug:
+     msg: "{ansible_facts}"
