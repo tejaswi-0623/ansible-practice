@@ -9,7 +9,7 @@
   - name: check condition
     ansible.builtin.debug:
        msg: "given number is greather than 5"
-    when: given number >> 5
+    when: given number > 5
 
   - name: check condition
     ansible.builtin.debug:
