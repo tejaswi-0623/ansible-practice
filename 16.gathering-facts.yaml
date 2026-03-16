@@ -20,3 +20,5 @@
 
 
 #Ansible factsThis prints all system facts collected by Ansible, such as OS type,IP address,hostname,CPU,memory,disk information
+#"msg": "the package manager is Redhat"
+
