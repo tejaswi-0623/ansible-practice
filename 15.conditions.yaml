@@ -7,7 +7,7 @@
    number: 6
   tasks:
   - name: check condition
-    ansible.bulitin.debug:
+    ansible.builtin.debug:
        msg: "given number is greather than 5"
     when: given number >> 5
 
