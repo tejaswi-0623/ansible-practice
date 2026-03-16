@@ -4,8 +4,8 @@
   hosts: local #run ansible locally 
   connection: local #need to use SSH to connect to server
   vars:
-  course: DevOps
-  is_live: true
+   course: DevOps
+   is_live: true
   tasks:
   - name: check condition
     ansible.builtin.debug:
