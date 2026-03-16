@@ -1,0 +1,21 @@
+# to learn conditions in yaml
+
+- name: check number less than 10 or not
+  hosts: local
+  connection: local
+  vars:
+   number: 6
+  tasks:
+   - name: check condition
+     ansible.bulitin.debug:
+       msg: "given number is greather than 5"
+     when:given number >> 5
+
+   - name: check condition
+     ansible.builtin.debug:
+       msg: "given number is less than 5"
+     when:given number <= 5
+
+
+
+#while giving when condition we don't use any type of braces that is fixed syntax
