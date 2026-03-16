@@ -10,7 +10,7 @@
   - name: check condition
     ansible.builtin.debug:
       msg: "is the {{ course }} class is live everyday?"
-    when: is_live
+    when: is_live #checking the condition if ture will execute above msg otherwise it terminates the script
 
 #in prompt: ansible-playbook -i inventory.ini 14.conditions.yaml
 #is_live:true here the given condtion is true so we got ouptut as below
